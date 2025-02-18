@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <nav class="bg-[#264b6d] shadow-lg">
+    <div class="max-w-7xl mx-auto px-4">
+        <!-- Top Bar with Social Links -->
+        <div class="hidden md:flex justify-end items-center py-2 border-b border-[#315d87]">
+            <div class="flex space-x-4">
+                <a href="https://www.facebook.com/pages/allconferencealertcom/323565867774881" target="_blank" class="text-white hover:text-gray-200">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://twitter.com/AllConefernce" target="_blank" class="text-white hover:text-gray-200">
+                    <i class="fab fa-x-twitter"></i>
+                </a>
+                <a href="https://www.linkedin.com/company/allconferencealertofficial" target="_blank" class="text-white hover:text-gray-200">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://www.youtube.com/channel/UCzKmSX5xzpuhjxrilOvrlJw" target="_blank" class="text-white hover:text-gray-200">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://www.instagram.com/allconferencealertt/" target="_blank" class="text-white hover:text-gray-200">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://en.wikipedia.org/wiki/Academic_conference" target="_blank" class="text-white hover:text-gray-200">
+                    <i class="fab fa-wikipedia-w"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Main Navigation -->
+        <div class="flex justify-between items-center h-16">
+            <!-- Logo -->
+            <div class="flex-shrink-0">
+                <a href="/" class="flex items-center">
+                    <img src="https://www.allconferencealert.com/images/logo.png" alt="All Conference Alert" class="h-12 w-auto">
+                </a>
+            </div>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center space-x-4">
+                <!-- Primary Navigation -->
+                <div class="flex space-x-4">
+                    <a href="/" class="text-white hover:bg-[#315d87] px-3 py-2 rounded-md text-sm font-medium">
+                        <i class="far fa-user-circle mr-1"></i>Home
+                    </a>
+                    <a href="/events" class="text-white hover:bg-[#315d87] px-3 py-2 rounded-md text-sm font-medium">
+                        <i class="fa fa-plus mr-1"></i>Add Events
+                    </a>
+                    <a href="/journals" class="text-white hover:bg-[#315d87] px-3 py-2 rounded-md text-sm font-medium">
+                        <i class="far fa-newspaper mr-1"></i>Journals
+                    </a>
+                    <a href="/blog" class="text-white hover:bg-[#315d87] px-3 py-2 rounded-md text-sm font-medium">
+                        <i class="fas fa-blog mr-1"></i>Blog
+                    </a>
+                    <a href="/help" class="text-white hover:bg-[#315d87] px-3 py-2 rounded-md text-sm font-medium">
+                        <i class="fa fa-question-circle mr-1"></i>Help
+                    </a>
+                </div>
+
+                <!-- Search Bar -->
+                <div class="relative">
+                    <input type="text" placeholder="Search by Topics, Country, City" 
+                           class="w-72 px-4 py-1 text-sm text-gray-900 bg-white rounded-full focus:outline-none focus:ring-2 focus:ring-[#e11b28]">
+                    <button class="absolute right-3 top-1/2 transform -translate-y-1/2">
+                        <i class="fa fa-search text-gray-500"></i>
+                    </button>
+                </div>
+
+                <!-- Auth Buttons -->
+                <div class="flex items-center space-x-2">
+                    <a href="/login" class="bg-[#e11b28] text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-red-700 transition duration-300">
+                        <i class="fa fa-sign-in mr-1"></i>Login
+                    </a>
+                </div>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden flex items-center space-x-4">
+                <!-- Mobile Search Icon -->
+                <button class="text-white p-2">
+                    <i class="fa fa-search"></i>
+                </button>
+                <!-- Mobile User Icon -->
+                <button class="text-white p-2">
+                    <i class="far fa-user"></i>
+                </button>
+                <!-- Mobile Menu Toggle -->
+                <button class="mobile-menu-button text-white p-2">
+                    <i class="fa fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="md:hidden hidden mobile-menu bg-[#315d87]">
+        <div class="px-2 pt-2 pb-3 space-y-1">
+            <a href="/" class="text-white block px-3 py-2 rounded-md text-base font-medium hover:bg-[#264b6d]">
+                <i class="far fa-user-circle mr-1"></i>Home
+            </a>
+            <a href="/events" class="text-white block px-3 py-2 rounded-md text-base font-medium hover:bg-[#264b6d]">
+                <i class="fa fa-plus mr-1"></i>Add Events
+            </a>
+            <a href="/journals" class="text-white block px-3 py-2 rounded-md text-base font-medium hover:bg-[#264b6d]">
+                <i class="far fa-newspaper mr-1"></i>Journals
+            </a>
+            <a href="/blog" class="text-white block px-3 py-2 rounded-md text-base font-medium hover:bg-[#264b6d]">
+                <i class="fas fa-blog mr-1"></i>Blog
+            </a>
+            <a href="/help" class="text-white block px-3 py-2 rounded-md text-base font-medium hover:bg-[#264b6d]">
+                <i class="fa fa-question-circle mr-1"></i>Help
+            </a>
+            
+            <!-- Mobile Social Links -->
+            <div class="flex space-x-4 px-3 py-2">
+                <a href="https://www.facebook.com/pages/allconferencealertcom/323565867774881" target="_blank" class="text-white">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://twitter.com/AllConefernce" target="_blank" class="text-white">
+                    <i class="fab fa-x-twitter"></i>
+                </a>
+                <a href="https://www.linkedin.com/company/allconferencealertofficial" target="_blank" class="text-white">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://www.instagram.com/allconferencealertt/" target="_blank" class="text-white">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<script>
+    // Mobile menu toggle
+    document.addEventListener('DOMContentLoaded', function() {
+        const mobileMenuButton = document.querySelector('.mobile-menu-button');
+        const mobileMenu = document.querySelector('.mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    });
+</script>
+</body>
+</html>
